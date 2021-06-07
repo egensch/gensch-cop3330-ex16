@@ -12,13 +12,7 @@ public class exercise16 {
         System.out.print("What is your age? ");
         int age = driving.nextInt();
 
-        if(age < 16)
-        {
-            System.out.println("You are not old enough to legally drive.");
-        }
-        else
-        {
-            System.out.println("You are old enough to legally drive.");
-        }
+        String msg = (age >= 16) ? "You are old enough to legally drive." : "You are not old enough to legally drive.";
+        System.out.println(msg);
     }
 }
